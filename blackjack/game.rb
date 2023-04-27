@@ -66,7 +66,7 @@ class Blackjack
     elsif hand_value(player_hand) == hand_value(dealer_hand)
       puts '引き分けです！'
     else
-      puts 'あなたの負けです'
+      puts 'あなたの負けです!'
     end
 
     puts 'ブラックジャックを終了します。'
