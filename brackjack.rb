@@ -3,7 +3,7 @@ require_relative 'deck'
 
 class Blackjack
   def hand_value(hand)
-    base_value = hand.map(&:value).reduce(:+)
+    base_value = hand.map(&:value).sum
     num_aces = hand.count { |card| card.rank == 'A' }
     num_aces.times do
       base_value -= 10 if base_value > 21
